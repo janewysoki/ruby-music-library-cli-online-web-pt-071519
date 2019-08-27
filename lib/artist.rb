@@ -11,8 +11,9 @@ class Artist
   end
 
   def add_song(song_obj)
-    if !song_obj.artist #if it has an artist
-      song_obj.artist = self 
+    song_obj.artist = self unless song_obj.artist
+    #if !song_obj.artist #if it has an artist
+      #song_obj.artist = self  
     end
   end
 
