@@ -3,9 +3,9 @@ class Song
   attr_accessor :name
   @@all = [] #class variable is for the whole class; saves all instances of song so you can have a collection of song instances
   
-  def initialize(title)
+  def initialize(title, artist_obj = nil) 
     @name = title
-    
+    @artist = artist_obj
   end
 
   def self.all #class method; function to accesss all instances of the call AKA CLASS READER METHOD
@@ -24,6 +24,10 @@ class Song
     song = self.new(title) #self.new could also be Song.new
     song.save #returns an array of sonsg, NOT an instance 
     song #think RETURN VALUE; always want to return an instance of a song
+  end
+  
+  def artist
+  
   end
 end
 
