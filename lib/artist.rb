@@ -10,6 +10,11 @@ class Artist
     @songs = []
   end
 
+  def add_song(song_obj)
+    if song_obj.artist #if it has an artist
+    song_obj.artist = self 
+  end
+
   def self.all 
     @@all
   end
