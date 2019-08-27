@@ -13,7 +13,7 @@ class Song
   end
   
   def self.destroy_all
-  @@all.clear #all.clear would work too
+    @@all.clear #all.clear would work too
   end
   
   def save
