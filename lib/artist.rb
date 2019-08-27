@@ -1,11 +1,13 @@
 class Artist
 
-  attr_accessor :name
+  attr_accessor :name, 
+  attr_reader :songs #preferential to do reader here so it can't be changed; name of song shouldn't change
+  
   @@all = [] 
   
   def initialize(title)
     @name = title
-    
+    @songs = []
   end
 
   def self.all 
