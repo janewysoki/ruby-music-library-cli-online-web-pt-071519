@@ -21,7 +21,7 @@ class Song
   end
 
   def self.create(title)
-    song = self.new(title)
+    song = self.new(title) #self.new could also be Song.new
     song.save #returns an array of sonsg, NOT an instance 
     song #think RETURN VALUE; always want to return an instance of a song
   end
