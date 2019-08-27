@@ -26,8 +26,8 @@ class Song
     song #think RETURN VALUE; always want to return an instance of a song
   end
   
-  def artist
-  
+  def artist #reader method
+    
   end
 end
 
